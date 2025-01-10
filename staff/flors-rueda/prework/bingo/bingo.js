@@ -1,4 +1,5 @@
 const saySomething = (message) => {
+  //función que dice cosas
   console.log(message);
   alert(message);
 };
@@ -107,8 +108,8 @@ const uploadRaffle = (raffleNumbers, number) => {
 };
 
 const isGameStillOn = (card) => {
-  console.log("This is your card right now:"+ printCard(card))
-  let userInput = prompt("This is your card right now:"+ printCard(card) + "\nKeep playing?\nCancel will return you to the main menu.", "yes");
+  console.log("This is your card right now:" + printCard(card))
+  let userInput = prompt("This is your card right now:" + printCard(card) + "\nKeep playing?\nCancel will return you to the main menu.", "yes");
   if (userInput === null) {
     return false;
   } else if (userInput.toLowerCase() !== "yes") {
